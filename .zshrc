@@ -1,4 +1,4 @@
-export ZSH="/Users/i533499/.oh-my-zsh"
+export ZSH="/Users/i533499/"
 ZSH_THEME=""
 PROMPT='%F{magenta}NICOSCHOENTEICH%f %~%F{green}$(git_branch_name)%f > '
 
