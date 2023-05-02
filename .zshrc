@@ -1,4 +1,4 @@
-export ZSH="/Users/i533499/.dotfiles"
+export ZSH="/Users/i533499/dotfiles"
 ZSH_THEME=""
 PROMPT='%F{magenta}NICOSCHOENTEICH%f %~%F{green}$(git_branch_name)%f > '
 
