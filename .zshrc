@@ -1,4 +1,6 @@
-export ZSH="/Users/i533499/dotfiles"
+# https://github.com/ohmyzsh/ohmyzsh needs to be cloned into the 
+.oh-my-zsh diretory
+export ZSH="/Users/i533499/.oh-my-zsh"
 ZSH_THEME=""
 PROMPT='%F{magenta}NICOSCHOENTEICH%f %~%F{green}$(git_branch_name)%f > '
 
