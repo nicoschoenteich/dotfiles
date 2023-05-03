@@ -1,7 +1,9 @@
-# https://github.com/ohmyzsh/ohmyzsh needs to be cloned into the 
-.oh-my-zsh diretory
+# https://github.com/ohmyzsh/ohmyzsh needs to be cloned into the .oh-my-zsh diretory
 export ZSH="/Users/i533499/.oh-my-zsh"
-ZSH_THEME=""
+source $ZSH/oh-my-zsh.sh
+
+_THEME=""
+
 PROMPT='%F{magenta}NICOSCHOENTEICH%f %~%F{green}$(git_branch_name)%f > '
 
 function git_branch_name()
@@ -18,14 +20,6 @@ function git_branch_name()
 ENABLE_CORRECTION="false"
 
 plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
-export PATH="/usr/local/opt/node@14/bin:$PATH"
-export PATH="/usr/local/opt/node@14/bin:$PATH"
-
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 alias vim=nvim
 
@@ -48,3 +42,7 @@ function dirtoprod () {
 alias cflogineu10="cf login -a https://api.cf.eu10.hana.ondemand.com"
 alias cfloginus10="cf login -a https://api.cf.us10.hana.ondemand.com"
 alias cfloginus10001="cf login -a https://api.cf.us10-001.hana.ondemand.com"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
