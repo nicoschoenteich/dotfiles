@@ -23,7 +23,8 @@ plugins=(git)
 
 alias vim=nvim
 
-alias docker=podman
+#alias docker=podman
+#alias docker-compose=podman-compose
 
 function chpwd() {
   l -1
@@ -34,7 +35,7 @@ function dirtoprod () {
 		echo ERROR: please check your working directory
   		return 1
 	else
-		cp -r . ../../../Tutorials/tutorials/$(basename $(pwd))/
+		cp -r . ../../../../nicoschoenteich/Tutorials/tutorials/$(basename $(pwd))/
 		echo SUCCESS
 	fi
 }

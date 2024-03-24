@@ -1,15 +1,16 @@
--- required steps:
--- git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
--- :PackerInstall
--- :PackerCompile
--- make sure to install https://github.com/ryanoasis/nerd-fonts
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
 
-return require('packer').startup(function(use)
-	use 'wbthomason/packer.nvim'
-	use({
-		'nvim-tree/nvim-tree.lua',
-		requires = {
-			'nvim-tree/nvim-web-devicons', -- optional
-		}
-	})
-end)
+require('lazy').setup({
+		'nvim-tree/nvim-tree.lua'
+})

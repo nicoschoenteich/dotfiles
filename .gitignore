@@ -1,3 +1,8 @@
+configstore/
+containers/
+gh/
+gh-copilot/
+
 nvim/packer/
 nvim/plugin/
 
