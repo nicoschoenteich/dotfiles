@@ -1,0 +1,56 @@
+{
+  "telemetry.enableTelemetry": false,
+  "workbench.colorTheme": "Deepdark Material Theme | Default Version",
+  "workbench.iconTheme": "vscode-icons-mac",
+  "workbench.startupEditor": "none",
+  "sap.ux.applicationModeler.disableMigrationPrompt": true,
+  "editor.semanticTokenColorCustomizations": {
+    "[Default Dark+]": {
+      "rules": {
+        "property.mandatory:xml": {
+          "bold": true
+        },
+        "string.i18n:xml": {
+          "italic": true
+        }
+      }
+    },
+    "[Default Light+]": {
+      "rules": {
+        "property.mandatory:xml": {
+          "bold": true
+        },
+        "string.i18n:xml": {
+          "italic": true
+        }
+      }
+    },
+    "[Default High Contrast]": {
+      "rules": {
+        "property.mandatory:xml": {
+          "bold": true
+        },
+        "string.i18n:xml": {
+          "italic": true
+        }
+      }
+    }
+  },
+  "cSpell.userWords": [
+    "approuter",
+    "Middlewares",
+    "webcomponents"
+  ],
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": [":", "n", "enter"], "commands": [":bnext"] },
+    { "before": [":", "f", "enter"], "commands": ["workbench.files.action.focusFilesExplorer"] },
+    { "before": [":", "t", "enter"], "commands": ["workbench.action.terminal.focus"] },
+    { "before": [":", "t", "e", "r", "m", "i", "n", "a", "l", "enter"], "commands": ["workbench.action.terminal.new"] }
+  ],
+  "workbench.statusBar.visible": false
+}

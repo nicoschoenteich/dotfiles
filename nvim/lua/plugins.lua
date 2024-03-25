@@ -12,5 +12,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-		'nvim-tree/nvim-tree.lua'
+		'nvim-tree/nvim-tree.lua',
+		'neovim/nvim-lspconfig',
+		'nvim-tree/nvim-web-devicons',
+		'nvim-treesitter/nvim-treesitter'
 })
+

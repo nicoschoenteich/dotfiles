@@ -10,3 +10,4 @@ require('nvim-tree').setup({
 })
 require('statusline')
 require('theme')
+require('lsp')

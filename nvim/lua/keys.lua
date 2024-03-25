@@ -5,7 +5,7 @@ local map = vim.api.nvim_set_keymap
 
 --nvim.tree specific stuff
 -- normal mode: use 't' to focus nvim.tree
-map('n', ':t', [[:NvimTreeFocus]], {})
+map('n', ':f', [[:NvimTreeFocus]], {})
 
 -- normal mode: use ':n' to create new file
 map('n', ':n', 'a', {})
