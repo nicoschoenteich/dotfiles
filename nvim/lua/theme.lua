@@ -1,1 +1,1 @@
-vim.cmd 'colorscheme evening'
+-- vim.cmd 'colorscheme onedark'

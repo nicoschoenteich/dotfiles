@@ -46,11 +46,15 @@
   },
   "editor.minimap.enabled": false,
   "breadcrumbs.enabled": false,
+  "workbench.statusBar.visible": false,
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": [":", "n", "enter"], "commands": [":bnext"] },
+    { "before": [":", "c", "l", "o", "s", "e", "enter"], "commands": [":bd"] },
     { "before": [":", "f", "enter"], "commands": ["workbench.files.action.focusFilesExplorer"] },
     { "before": [":", "t", "enter"], "commands": ["workbench.action.terminal.focus"] },
     { "before": [":", "t", "e", "r", "m", "i", "n", "a", "l", "enter"], "commands": ["workbench.action.terminal.new"] }
   ],
-  "workbench.statusBar.visible": false
+  "sap.ux.applicationModeler.showPropertiesDescriptionInPageEditor": true,
+  "sap.ux.help.showDescriptions": "enabled",
+  "sap.ux.help.guideDetailsMode": "full"
 }

@@ -15,6 +15,7 @@ require('lazy').setup({
 		'nvim-tree/nvim-tree.lua',
 		'neovim/nvim-lspconfig',
 		'nvim-tree/nvim-web-devicons',
-		'nvim-treesitter/nvim-treesitter'
+		'nvim-treesitter/nvim-treesitter',
+		'navarasu/onedark.nvim'
 })
 
