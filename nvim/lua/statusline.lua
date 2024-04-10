@@ -14,5 +14,5 @@ end
 
 vim.opt.statusline = status_line()
 
--- only show most recent status line (think of with multiple window)
+-- only show most recent status line (think of multiple window)
 vim.opt.laststatus=3

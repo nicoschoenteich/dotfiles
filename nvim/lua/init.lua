@@ -1,4 +1,4 @@
--- print('SAP Developer Advocates')
+-- the order does matter
 
 require('vars')
 require('keys')
