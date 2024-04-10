@@ -15,15 +15,15 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
 	'nvim-tree/nvim-tree.lua',
-	'neovim/nvim-lspconfig',
 	'nvim-tree/nvim-web-devicons',
-	'EdenEast/nightfox.nvim',
+	'neovim/nvim-lspconfig',
 	{
 		'nvim-treesitter/nvim-treesitter',
 		dependencies = {
 			'nvim-treesitter/nvim-treesitter-textobjects'
 		},
 		build = ':TSUpdate'
-	}
+	},
+	'EdenEast/nightfox.nvim'
 })
 

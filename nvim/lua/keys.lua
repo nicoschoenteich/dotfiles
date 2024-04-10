@@ -3,7 +3,6 @@
 
 local map = vim.api.nvim_set_keymap
 
---nvim.tree specific stuff
 -- normal mode: use ':f' to focus nvim.tree
 map('n', ':f', [[:NvimTreeFocus]], {})
 

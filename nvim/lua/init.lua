@@ -1,4 +1,4 @@
--- the order does matter
+-- order of statements does matter
 
 require('vars')
 require('keys')
@@ -11,3 +11,4 @@ require('nvim-tree').setup({
 require('statusline')
 require('theme')
 require('lsp')
+require('treesitter')
