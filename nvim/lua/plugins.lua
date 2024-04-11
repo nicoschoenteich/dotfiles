@@ -24,6 +24,6 @@ require('lazy').setup({
 		},
 		build = ':TSUpdate'
 	},
-	'EdenEast/nightfox.nvim'
+	'EdenEast/nightfox.nvim',
+	'jiangmiao/auto-pairs'
 })
-
