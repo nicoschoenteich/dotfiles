@@ -20,4 +20,4 @@ vim.g.markdown_folding = 1
 vim.opt.foldmethod = "syntax"
 vim.opt.foldlevel = 99
 
-vim.g.markdown_fenced_languages = {"javascript", "js=javascript", "json=javascript"}
+vim.g.markdown_fenced_languages = {"javascript", "js=javascript", "json=javascript", "xml"}
