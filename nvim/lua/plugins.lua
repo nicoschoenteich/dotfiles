@@ -25,5 +25,6 @@ require('lazy').setup({
 		build = ':TSUpdate'
 	},
 	'EdenEast/nightfox.nvim',
-	'jiangmiao/auto-pairs'
+	'jiangmiao/auto-pairs',
+	'tpope/vim-commentary'
 })

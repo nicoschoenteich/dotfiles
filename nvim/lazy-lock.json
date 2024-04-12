@@ -6,5 +6,6 @@
   "nvim-tree.lua": { "branch": "master", "commit": "85c502e9076d9c82e2f04addabb3614846ae7558" },
   "nvim-treesitter": { "branch": "master", "commit": "33c9db832b6f25446f7bd2dd3353f7737a3476c4" },
   "nvim-treesitter-textobjects": { "branch": "master", "commit": "2aa454e4037424c678a8ff033951a5be39e54b9c" },
-  "nvim-web-devicons": { "branch": "master", "commit": "6662f059bf78e6092ba90cd1929599625f448f55" }
+  "nvim-web-devicons": { "branch": "master", "commit": "6662f059bf78e6092ba90cd1929599625f448f55" },
+  "vim-commentary": { "branch": "master", "commit": "c4b8f52cbb7142ec239494e5a2c4a512f92c4d07" }
 }
