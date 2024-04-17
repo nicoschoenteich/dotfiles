@@ -5,9 +5,15 @@ return {
 	{
 		"lewis6991/gitsigns.nvim",
 		config = function()
-			require("gitsigns").setup()
-
-			-- implement key for ":Gitsigns toggle_current_line_blame"
+			require("gitsigns").setup{
+				current_line_blame = true,
+				current_line_blame_opts = {
+					delay = 0
+			  	},
+				current_line_blame_formatter_opts = {
+					relative_time = true,
+				}
+			}
 		end
 	}
 }
