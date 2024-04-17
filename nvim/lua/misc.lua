@@ -24,11 +24,3 @@ vim.g.markdown_fenced_languages = {"javascript", "js=javascript", "json=javascri
 
 vim.opt.spell = true
 vim.opt.spelllang = "en_us"
-
--- make sure vim-commentary can handle cds files
-vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
-  pattern = {"*.cds"},
-  command = "setlocal commentstring=//%s",
-})
-
-vim.cmd "colorscheme carbonfox"

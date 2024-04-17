@@ -13,28 +13,9 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-local plugins = {
-	"nvim-tree/nvim-tree.lua",
-	"nvim-tree/nvim-web-devicons",
-	"EdenEast/nightfox.nvim",
-	"neovim/nvim-lspconfig",
-	{
-		"nvim-treesitter/nvim-treesitter",
-		dependencies = {
-			"nvim-treesitter/nvim-treesitter-textobjects"
-		},
-		build = ":TSUpdate"
-	},
-	"jiangmiao/auto-pairs",
-	"tpope/vim-commentary"
-}
+require("lazy").setup("plugins")
 
 -- order of statements does matter
-require("lazy").setup(plugins)
-
 require("misc")
-require("filetree")
 require("statusline")
-require("lsp")
-require("treesitter")
 require("keys")
