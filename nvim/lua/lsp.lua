@@ -15,8 +15,8 @@ lspconfig.tsserver.setup {
 configs.sapcds_lsp = {
     default_config = {
         cmd = { "cds-lsp", "--stdio" };
-        -- filetype = { 'cds' };
-        root_dir = lspconfig.util.root_pattern('.git', 'package.json');
+        filetypes = { "cds" };
+        root_dir = lspconfig.util.root_pattern(".git", "package.json");
         settings = {};
     }
 }

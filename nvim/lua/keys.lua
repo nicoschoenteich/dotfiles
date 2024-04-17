@@ -3,8 +3,11 @@
 
 local map = vim.api.nvim_set_keymap
 
--- normal mode: use ':f' to focus nvim.tree
-map('n', ':f', [[:NvimTreeFocus]], {})
+-- normal mode: use ":f" to focus nvim-tree
+map("n", ":f", [[:NvimTreeFocus]], {})
 
--- normal mode: use 'n' to create new file
-map('n', 'n', 'a', {})
+-- normal mode: use "n" to create new file
+map("n", "n", "a", {})
+
+-- normal mode: use "fo" to format file (only works if lsp is set up for filetype)
+vim.keymap.set("n", "fo", function() vim.lsp.buf.format() end, opts)
