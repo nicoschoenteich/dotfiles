@@ -13,9 +13,11 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+-- this looks for all lua files in the lua/plugins/ directory
 require("lazy").setup("plugins")
 
--- order of statements does matter
+-- this looks for respective files in lua/ directory
+-- order does matter
 require("misc")
 require("statusline")
 require("keys")
