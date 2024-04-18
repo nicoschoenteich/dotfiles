@@ -15,7 +15,7 @@ return {
 				}
 			}
 
-			vim.keymap.set("n", "gh", ":Gitsigns preview_hunk", {})
+			vim.keymap.set("n", "gh", ":Gitsigns preview_hunk<Enter>", {})
 		end
 	}
 }

@@ -13,7 +13,7 @@ return {
 			
 			-- vim.keymap.set() for some reason doesn't work here
 			vim.api.nvim_set_keymap("n", "n", "a", {})
-			vim.api.nvim_set_keymap("n", ":f", [[:NvimTreeFocus]], {})
+			vim.api.nvim_set_keymap("n", ":f", ":NvimTreeFocus", {})
 
 		end
 	},
