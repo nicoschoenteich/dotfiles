@@ -1,3 +1,6 @@
 return {
-	"chrisbra/csv.vim"
+	"chrisbra/csv.vim",
+	config = function()
+		vim.g.csv_highlight_column = "y"
+	end
 }
