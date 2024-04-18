@@ -8,7 +8,14 @@ return {
 		local on_attach = function(client, bufnr)
 		end
 
-		vim.keymap.set("n", "fo", function() vim.lsp.buf.format() end, opts)
+
+		vim.keymap.set("n", "fo", function()
+			if(vim.bo.filetype == "json") then
+				vim.cmd("%!jq . --tab")
+			else
+				vim.lsp.buf.format()
+			end
+		end, opts)
 
 		-- TypeScript
 		lspconfig.tsserver.setup {
