@@ -22,5 +22,8 @@ vim.opt.foldlevel = 99
 
 vim.g.markdown_fenced_languages = {"javascript", "js=javascript", "json=javascript", "xml"}
 
-vim.opt.spell = true
+vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
+  pattern = {"*.md"},
+  command = ":setlocal spell",
+})
 vim.opt.spelllang = "en_us"
