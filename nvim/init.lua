@@ -20,4 +20,3 @@ require("lazy").setup("plugins")
 -- order does matter
 require("misc")
 require("statusline")
-require("keys")

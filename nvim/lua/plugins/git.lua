@@ -14,6 +14,8 @@ return {
 					relative_time = true,
 				}
 			}
+
+			vim.keymap.set("n", ":gh", ":Gitsigns preview_hunk", {})
 		end
 	}
 }

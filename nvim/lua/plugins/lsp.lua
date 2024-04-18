@@ -8,6 +8,8 @@ return {
 		local on_attach = function(client, bufnr)
 		end
 
+		vim.keymap.set("n", "fo", function() vim.lsp.buf.format() end, opts)
+
 		-- TypeScript
 		lspconfig.tsserver.setup {
 		  on_attach = on_attach,
