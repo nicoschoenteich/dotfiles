@@ -4,12 +4,15 @@ local function status_line()
 	local right_align = "%="
 	local line_no = "%10([%l/%L%)]"
 
-	return string.format(
-    	"%s%s%s",
-		file_name,
-		right_align,
-		line_no
-	)
+	-- return string.format(
+    	-- "%s%s%s",
+	-- 	right_align,
+	-- 	file_name,
+	-- 	line_no
+	-- )
+	
+	return "%=%t"
+	
 end
 
 vim.opt.statusline = status_line()
