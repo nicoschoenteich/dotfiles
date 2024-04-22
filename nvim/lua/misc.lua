@@ -27,3 +27,5 @@ vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
   command = ":setlocal spell",
 })
 vim.opt.spelllang = "en_us"
+
+vim.keymap.set("n", "fw", "<C-w>w", {})

@@ -6,18 +6,31 @@ return {
 		"nvim-tree/nvim-tree.lua",
 		config = function()
 			require("nvim-tree").setup({
+				-- call empty function to not apply default and interfere with telescope
+				on_attach = function() end,
 				git = {
 					ignore = false
 				}
 			})
-			
-			-- vim.keymap.set() for some reason doesn't work here
-			vim.api.nvim_set_keymap("n", "n", "a", {})
-			vim.api.nvim_set_keymap("n", ":f", ":NvimTreeFocus", {})
 
+			local api = require "nvim-tree.api"
+
+			-- reimplement some of the default keybindings only for NvimTree files
+			vim.api.nvim_create_autocmd("FileType", {
+				pattern = { "NvimTree" },
+				callback = function()
+					vim.keymap.set("n", "<Enter>", api.node.open.edit, { buffer = true })
+					vim.keymap.set("n", "fv", api.node.open.vertical, { buffer = true })
+					vim.keymap.set("n", "r", api.fs.rename, { buffer = true })
+					vim.keymap.set("n", "d", api.fs.remove, { buffer = true })
+					vim.keymap.set("n", "n", api.fs.create, { buffer = true })
+				end
+			})
+
+			vim.keymap.set("n", "fe", ":NvimTreeFocus<Enter>")
 		end
 	},
 	{
-		"nvim-tree/nvim-web-devicons"	
+		"nvim-tree/nvim-web-devicons"
 	}
 }

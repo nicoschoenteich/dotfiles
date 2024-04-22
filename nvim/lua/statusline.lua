@@ -1,8 +1,8 @@
 local function status_line()
 
-	local file_name = "%t"
-	local right_align = "%="
-	local line_no = "%10([%l/%L%)]"
+	-- local file_name = "%t"
+	-- local right_align = "%="
+	-- local line_no = "%10([%l/%L%)]"
 
 	-- return string.format(
     	-- "%s%s%s",
@@ -10,9 +10,9 @@ local function status_line()
 	-- 	file_name,
 	-- 	line_no
 	-- )
-	
+
 	return "%=%t"
-	
+
 end
 
 vim.opt.statusline = status_line()
