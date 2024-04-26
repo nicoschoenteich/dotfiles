@@ -27,7 +27,7 @@ return {
 					documentation = cmp.config.window.bordered(),
 				},
 				mapping = cmp.mapping.preset.insert({
-					["<Esc>"] = cmp.mapping.abort(),
+					-- ["q"] = cmp.mapping.abort(),
 					["<Tab>"] = cmp.mapping.confirm({ select = true }),
 					["<Enter>"] = cmp.mapping.confirm({ select = true }),
 				}),
