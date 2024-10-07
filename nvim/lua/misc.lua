@@ -2,12 +2,12 @@
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.syntax = "ON"
-vim.opt.termguicolors = true
+vim.opt.termguicolors = true --use terminal colors
 
 vim.opt.number = true
 vim.opt.numberwidth = 2
 
-vim.wo.wrap = true
+vim.wo.wrap = false
 vim.wo.linebreak = true
 
 vim.opt.autoindent = true
@@ -22,10 +22,21 @@ vim.opt.foldlevel = 99
 
 vim.g.markdown_fenced_languages = {"javascript", "js=javascript", "json=javascript", "xml"}
 
+-- spell check and line wrap only for markdown files
 vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
   pattern = {"*.md"},
   command = ":setlocal spell",
 })
+vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
+  pattern = {"*.md"},
+  command = ":setlocal wrap",
+})
+
+-- set transparent background for nvim-tree
+vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
+  command = ":hi NvimTreeNormal guibg=NONE",
+})
+
 vim.opt.spelllang = "en_us"
 
 vim.keymap.set("n", "fw", "<C-w>w", {})

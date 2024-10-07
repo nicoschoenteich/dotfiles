@@ -7,6 +7,9 @@ source $ZSH/oh-my-zsh.sh
 
 ENABLE_CORRECTION="false"
 
+DISABLE_AUTO_TITLE="true"
+echo -en "\e]0; \a"
+
 plugins=(git)
 
 alias vim=nvim

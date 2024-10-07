@@ -17,5 +17,8 @@ return {
 
 			vim.keymap.set("n", "gh", ":Gitsigns preview_hunk<Enter>", {})
 		end
+	},
+	{
+		"github/copilot.vim"
 	}
 }

@@ -2,6 +2,7 @@ configstore/
 containers/
 gh/
 gh-copilot/
+github-copilot/
 
 nvim/packer/
 nvim/plugin/

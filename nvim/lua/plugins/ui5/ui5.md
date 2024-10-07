@@ -1,65 +1,73 @@
-# sap.ui.core.Icon
+# sap.m.Link
 
-🔗 [sap.ui.core.Icon](https://ui5.sap.com/#/api/sap.ui.core.Icon)
+🔗 [sap.m.Link](https://ui5.sap.com/#/api/sap.m.Link)
 
-><p>Icon uses embedded font instead of pixel image. Comparing to image, Icon is easily scalable, color can be altered live and various effects can be added using css.</p><p>A set of built in Icons is available in the <a target="_blank" rel="noopener noreferrer" href="test-resources/sap/m/demokit/iconExplorer/webapp/index.html">Icon Explorer</a>
-			<img src="./resources/sap/ui/documentation/sdk/images/link-sap.png"
-			title="Information published on SAP site" class="sapUISDKExternalLink"/>.</p><p>For further information, see <a target="_self" href="topic/21ea0ea94614480d9a910b2e93431291">Icon and Icon Pool</a>.</p>
+><p>A hyperlink control used to navigate to other apps and web pages or to trigger actions.</p><h3>Overview</h3><p>The <code>Link</code> control is a clickable text element visualized in such a way that it stands out from the standard text. On hover, it changes its style to underlined text to provide additional feedback to the user.</p><h3>Usage</h3><p>You can set the <code>Link</code> to be enabled or disabled.</p><p>To create a visual hierarchy in large lists of links, you can set the less important links as <code>subtle</code> or the more important ones as <code>emphasized</code>.</p><p>To specify where the linked content is opened, you can use the <code>target</code> property.</p><h3>Responsive behavior</h3><p>If there is not enough space, the text of the <code>Link</code> becomes truncated. If the <code>wrapping</code> property is set to <code>true</code>, the text will be displayed on several lines, instead of being truncated.</p>
 
 ## Properties
 
-activeBackgroundColor
-activeColor
-alt
-backgroundColor
-color
-decorative
-height
-hoverBackgroundColor
-hoverColor
-noTabStop
-size
-src
-useIconTooltip
+accessibleRole
+accesskey
+ariaHasPopup
+emphasized
+emptyIndicatorMode
+enabled
+highlightAccKeysRef
+href
+rel
+subtle
+target
+text
+textAlign
+textDirection
+validateUrl
 width
+wrapping
 
 ## Methods
 
+_getToolbarInteractive
+addAriaDescribedBy
 addAriaLabelledBy
 attachPress
 detachPress
-sap.ui.core.Icon.extend
+sap.m.Link.extend
 firePress
 getAccessibilityInfo
-getActiveBackgroundColor
-getActiveColor
-getAlt
+getAccessibleRole
+getAriaDescribedBy
+getAriaHasPopup
 getAriaLabelledBy
-getBackgroundColor
-getColor
-getDecorative
-getHeight
-getHoverBackgroundColor
-getHoverColor
-sap.ui.core.Icon.getMetadata
-getNoTabStop
-getSize
-getSrc
-getUseIconTooltip
+getEmphasized
+getEmptyIndicatorMode
+getEnabled
+getHref
+sap.m.Link.getMetadata
+getRel
+getSubtle
+getTarget
+getText
+getTextAlign
+getTextDirection
+getValidateUrl
 getWidth
+getWrapping
+removeAllAriaDescribedBy
 removeAllAriaLabelledBy
+removeAriaDescribedBy
 removeAriaLabelledBy
-setActiveBackgroundColor
-setActiveColor
-setAlt
-setBackgroundColor
-setColor
-setDecorative
-setHeight
-setHoverBackgroundColor
-setHoverColor
-setNoTabStop
-setSize
-setSrc
-setUseIconTooltip
+setAccessibleRole
+setAriaHasPopup
+setEmphasized
+setEmptyIndicatorMode
+setEnabled
+setHref
+setRel
+setSubtle
+setTarget
+setText
+setTextAlign
+setTextDirection
+setValidateUrl
 setWidth
+setWrapping

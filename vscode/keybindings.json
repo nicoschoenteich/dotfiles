@@ -1,8 +1,13 @@
 [
-    {
-        "key": "shift+[Period] c",
-        "command": "workbench.action.focusActiveEditorGroup",
+	{    
+        "key": "f e",
+        "command": "workbench.files.action.focusFilesExplorer",
         "when": "terminalFocus"
+    },
+    {
+        "key": "f w",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
     },
     {
         "key": "enter",
@@ -11,27 +16,34 @@
             "commands": [
                 "filesExplorer.openFilePreserveFocus",
                 "workbench.action.focusActiveEditorGroup"
-            ],
+            ]
         },
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
     },
     {
-        "key": "space",
-        "command": "-filesExplorer.openFilePreserveFocus",
+        "key": "f v",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "filesExplorer.openFilePreserveFocus",
+                "workbench.action.focusActiveEditorGroup",
+				"workbench.action.splitEditorLeft",
+            ]
+        },
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
     },
     {
-        "key": "shift+[Period] d enter",
+        "key": "d y enter",
         "command": "deleteFile",
         "when": "filesExplorerFocus && foldersViewVisible && explorerResourceMoveableToTrash && !explorerResourceReadonly && !inputFocus"
     },
     {
-        "key": "shift+[Period] n enter",
+        "key": "n",
         "command": "explorer.newFile",
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
     },
     {
-        "key": "shift+[Period] r enter",
+        "key": "r",
         "command": "renameFile",
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
     },
