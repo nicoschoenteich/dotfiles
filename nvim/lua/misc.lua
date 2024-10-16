@@ -6,6 +6,8 @@ vim.opt.termguicolors = true --use terminal colors
 
 vim.opt.number = true
 vim.opt.numberwidth = 2
+-- vim.opt.relativenumber = true
+-- vim.opt.rnu = true
 
 vim.wo.wrap = false
 vim.wo.linebreak = true
@@ -25,11 +27,13 @@ vim.g.markdown_fenced_languages = {"javascript", "js=javascript", "json=javascri
 -- spell check and line wrap only for markdown files
 vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
   pattern = {"*.md"},
-  command = ":setlocal spell",
+  command = ":setlocal spell | setlocal wrap",
 })
-vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
-  pattern = {"*.md"},
-  command = ":setlocal wrap",
+
+-- open images in os native image viewer
+vim.api.nvim_create_autocmd({"BufWinEnter"}, {
+  pattern = {"*.png", "*.jpg", "*.jpeg"},
+  command= ":lua os.execute(\"open \" .. vim.api.nvim_buf_get_name(0)) vim.api.nvim_buf_delete(0, {})"
 })
 
 -- set transparent background for nvim-tree
