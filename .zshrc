@@ -14,6 +14,8 @@ plugins=(git)
 
 alias vim=nvim
 
+export DYLD_LIBRARY_PATH="$(brew --prefix)/lib:$DYLD_LIBRARY_PATH"
+
 function chpwd() {
   l -1
 }
