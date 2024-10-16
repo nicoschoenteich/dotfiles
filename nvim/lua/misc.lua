@@ -2,12 +2,10 @@
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.syntax = "ON"
-vim.opt.termguicolors = true --use terminal colors
+vim.opt.termguicolors = true
 
 vim.opt.number = true
 vim.opt.numberwidth = 2
--- vim.opt.relativenumber = true
--- vim.opt.rnu = true
 
 vim.wo.wrap = false
 vim.wo.linebreak = true
