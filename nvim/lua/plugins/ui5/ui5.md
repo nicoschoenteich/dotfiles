@@ -1,35 +1,17 @@
-# sap.m.Breadcrumbs
+# sap.m.List
 
-🔗 [sap.m.Breadcrumbs](https://ui5.sap.com/#/api/sap.m.Breadcrumbs)
+🔗 [sap.m.List](https://ui5.sap.com/#/api/sap.m.List)
 
-><p>Enables users to navigate between items by providing a list of links to previous steps in the user's navigation path. The last three steps can be accessed as links directly, while the remaining links prior to them are available in a drop-down menu.</p>
+><p>The List control provides a container for all types of list items. For mobile devices, the recommended limit of list items is 100 to assure proper performance. To improve initial rendering of large lists, use the "growing" feature. Please refer to the SAPUI5 Developer Guide for more information..</p><p>See section "<a target="_self" href="topic/1da158152f644ba1ad408a3e982fd3df">Lists</a>" in the documentation for an introduction to <code>sap.m.List</code> control.</p>
 
 ## Properties
 
-currentLocationText
-separatorStyle
+backgroundDesign
 
 ## Methods
 
-_getToolbarInteractive
-addAriaLabelledBy
-addLink
-destroyCurrentLocation
-destroyLinks
-sap.m.Breadcrumbs.extend
-getAriaLabelledBy
-getCurrentLocation
-getCurrentLocationText
-getLinks
-sap.m.Breadcrumbs.getMetadata
-getOverflowToolbarConfig
-getSeparatorStyle
-indexOfLink
-insertLink
-removeAllAriaLabelledBy
-removeAllLinks
-removeAriaLabelledBy
-removeLink
-setCurrentLocation
-setCurrentLocationText
-setSeparatorStyle
+applyAriaRole
+sap.m.List.extend
+getBackgroundDesign
+sap.m.List.getMetadata
+setBackgroundDesign

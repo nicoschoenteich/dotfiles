@@ -15,6 +15,7 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 
 vim.opt.encoding = "utf-8"
+vim.opt.spelllang = "en_us"
 
 vim.g.markdown_folding = 1
 vim.opt.foldmethod = "syntax"
@@ -39,6 +40,5 @@ vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
   command = ":hi NvimTreeNormal guibg=NONE",
 })
 
-vim.opt.spelllang = "en_us"
-
+-- use "fw" ("file window") in normal mode to switch between windows
 vim.keymap.set("n", "fw", "<C-w>w", {})
