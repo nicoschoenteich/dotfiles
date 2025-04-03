@@ -2,7 +2,7 @@
 ZSH_THEME=apple
 
 # https://github.com/ohmyzsh/ohmyzsh needs to be cloned into the .oh-my-zsh diretory
-export ZSH="/Users/i533499/.oh-my-zsh"
+export ZSH="/Users/i533499/ohmyzsh"
 source $ZSH/oh-my-zsh.sh
 
 ENABLE_CORRECTION="false"
@@ -31,10 +31,10 @@ function dirtoprod () {
 }
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # ruby
-source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-source /opt/homebrew/opt/chruby/share/chruby/auto.sh
-chruby ruby-3.3.0
+# source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+# source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+# chruby ruby-3.3.0
