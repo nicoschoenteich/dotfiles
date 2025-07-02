@@ -42,6 +42,3 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
 
 -- use "fw" ("file window") in normal mode to switch between windows
 vim.keymap.set("n", "fw", "<C-w>w", {})
-
--- use "gc" ("git chat") in normal mode to open Copilot chat
-vim.keymap.set("n", "gc", ":CopilotChatOpen<CR>", {})
