@@ -4,6 +4,8 @@ vim.lsp.enable({
 	"lua",
 })
 
+vim.diagnostic.config({ virtual_text = true })
+
 vim.keymap.set("n", "lh", vim.lsp.buf.hover, {})
 vim.keymap.set("n", "ld", vim.lsp.buf.definition, {})
 vim.keymap.set("n", "lr", vim.lsp.buf.references, {})
