@@ -1,0 +1,12 @@
+{
+	"servers": {
+		"cds-mcp": {
+			"args": [],
+			"autoApprove": [],
+			"command": "cds-mcp",
+			"disabled": false,
+			"env": {},
+			"type": "stdio"
+		}
+	}
+}

@@ -9,9 +9,6 @@ return {
 				current_line_blame = true,
 				current_line_blame_opts = {
 					delay = 0
-				},
-				current_line_blame_formatter_opts = {
-					relative_time = true,
 				}
 			}
 
@@ -24,22 +21,25 @@ return {
 	{
 		"CopilotC-Nvim/CopilotChat.nvim",
 		config = function()
+			local chat = require("CopilotChat")
+			local prompts = {
+				CDSDocs = {
+					prompt = "cds_mcp_search_docs hello {{query}} USE THE CDS-MCP SERVER"
+				}
+
+			}
+
 			require("CopilotChat").setup {
 				dependencies = {
-					{ "github/copilot.vim" },        -- or zbirenbaum/copilot.lua
-					{ "nvim-lua/plenary.nvim", branch = "master" }, -- for curl, log and async functions
+					{ "github/copilot.vim" },
+					{ "nvim-lua/plenary.nvim", branch = "master" },
 				},
-				build = "make tiktoken",             -- Only on MacOS or Linux
-				opts = {
-					-- See Configuration section for options
-				},
-				-- See Commands section for default commands if you want to lazy load on them
-
-				-- open chat in normal mode to open Copilot chat
+				build = "make tiktoken",
 				vim.keymap.set("n", ":chat", ":CopilotChatOpen", {}),
 				-- open chat with highlighted text and weirdly remove range selection '<,'>
-				vim.keymap.set("v", ":chat", ":CopilotChatOpen<Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><BS><BS><BS><BS><BS>", {})
+				vim.keymap.set("v", ":chat", ":CopilotChatOpen<Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><BS><BS><BS><BS><BS>", {}),
+				vim.keymap.set("n", ":reset", ":CopilotChatReset", {})
 			}
 		end
-	},
+	}
 }
