@@ -21,14 +21,6 @@ return {
 	{
 		"CopilotC-Nvim/CopilotChat.nvim",
 		config = function()
-			local chat = require("CopilotChat")
-			local prompts = {
-				CDSDocs = {
-					prompt = "cds_mcp_search_docs hello {{query}} USE THE CDS-MCP SERVER"
-				}
-
-			}
-
 			require("CopilotChat").setup {
 				dependencies = {
 					{ "github/copilot.vim" },

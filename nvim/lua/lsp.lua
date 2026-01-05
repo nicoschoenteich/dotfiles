@@ -11,9 +11,11 @@ vim.keymap.set("n", "ld", vim.lsp.buf.definition, {})
 vim.keymap.set("n", "lr", vim.lsp.buf.references, {})
 vim.keymap.set("n", "lf", function()
 	if (vim.bo.filetype == "json") then
-		vim.cmd("%!jq . --tab")
+		-- jq . --tab
+		vim.cmd("%!jq .")
 	elseif (vim.bo.filetype == "xml") then
-		vim.cmd("%!xq % --tab")
+		local file_path = vim.fn.expand("%:p")
+		vim.cmd("%!prettier --plugin=/Users/i533499/.nvm/versions/node/v22.16.0/lib/node_modules/@prettier/plugin-xml/src/plugin.js --single-attribute-per-line true --xml-whitespace-sensitivity \"preserve\" --tab-width 4 " .. file_path)
 	else
 		vim.lsp.buf.format()
 	end

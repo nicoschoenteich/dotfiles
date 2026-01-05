@@ -24,7 +24,7 @@ return {
 					vim.keymap.set("n", "r", api.fs.rename, { buffer = true })
 					vim.keymap.set("n", "d", api.fs.remove, { buffer = true })
 					vim.keymap.set("n", "n", api.fs.create, { buffer = true })
-					vim.keymap.set("n", "c", api.fs.copy.node, { buffer = true })
+					vim.keymap.set("n", "y", api.fs.copy.node, { buffer = true })
 					vim.keymap.set("n", "p", api.fs.paste, { buffer = true })
 
 				end

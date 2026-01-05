@@ -9,6 +9,6 @@ return {
 				}
 			}
 		})
-		vim.cmd "colorscheme saptechedlightfox"
+		vim.cmd "colorscheme carbonfox"
 	end
 }

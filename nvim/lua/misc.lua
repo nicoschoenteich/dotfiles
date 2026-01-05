@@ -11,8 +11,8 @@ vim.wo.wrap = false
 vim.wo.linebreak = true
 
 vim.opt.autoindent = true
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
 
 vim.opt.encoding = "utf-8"
 vim.opt.spelllang = "en_us"
@@ -43,7 +43,7 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
 
 -- set background color for nvim-tree
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
-	command = ":hi NvimTreeNormal guibg=#D1EFFF",
+	command = ":hi NvimTreeNormal guibg=#000000",
 })
 
 -- use "fw" ("file window") in normal mode to switch between windows
