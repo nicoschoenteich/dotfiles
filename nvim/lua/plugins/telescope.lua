@@ -7,9 +7,12 @@ return {
 	config = function()
 		require("telescope").setup{
 			defaults = {
-				file_ignore_patterns = { "node_modules" }
+				file_ignore_patterns = { "node_modules" },
+				      preview = {
+        treesitter = false,
+      },
 			}
-		}
+		} 
 
 		local builtin = require("telescope.builtin")
 		vim.keymap.set("n", "ff", builtin.find_files, {})
