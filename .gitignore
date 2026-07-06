@@ -2,9 +2,8 @@ configstore/
 containers/
 gh/
 gh-copilot/
+git/
 github-copilot/
-
-nvim/packer/
-nvim/plugin/
+hai/
 
 .DS_Store
