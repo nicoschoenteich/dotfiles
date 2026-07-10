@@ -1,0 +1,8 @@
+[user]
+	email = nicolai.schoenteich@sap.com
+	name = nicoschoenteich
+
+[core]
+		pager = delta
+[delta]
+		side-by-side = true
