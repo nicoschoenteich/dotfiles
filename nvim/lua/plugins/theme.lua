@@ -9,6 +9,6 @@ return {
 				}
 			}
 		})
-		vim.cmd "colorscheme carbonfox"
+		vim.cmd "colorscheme ui5conlightfox"
 	end
 }
