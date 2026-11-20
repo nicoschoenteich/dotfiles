@@ -1,5 +1,5 @@
 return {
-	dir = "/Users/I533499/github/nicoschoenteich/nightfox.nvim",
+	"nicoschoenteich/nightfox.nvim",
 	config = function()
 		require("nightfox").setup({
 			options = {
