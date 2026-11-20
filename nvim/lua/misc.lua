@@ -43,7 +43,7 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
 
 -- set background color for nvim-tree
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
-	command = ":hi NvimTreeNormal guibg=#FFF0E0",
+	command = ":hi NvimTreeNormal guibg=#0B0C0E",
 })
 
 -- use "fw" ("file window") in normal mode to switch between windows

@@ -1,5 +1,5 @@
 return {
-	"nicoschoenteich/nightfox.nvim",
+	dir = "/Users/I533499/github/nicoschoenteich/nightfox.nvim",
 	config = function()
 		require("nightfox").setup({
 			options = {
@@ -9,6 +9,6 @@ return {
 				}
 			}
 		})
-		vim.cmd "colorscheme ui5conlightfox"
+		vim.cmd "colorscheme jouleworkdarkfox"
 	end
 }
